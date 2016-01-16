@@ -1,0 +1,8 @@
+<%! func Header(w io.Writer, p *Page) error %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title><%= p.Title %> Year</title>
+</head>
+<body>

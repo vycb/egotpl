@@ -1,0 +1,13 @@
+<%! func Home(w io.Writer, p *Page) error %>
+
+<% Header(w, p) %>
+<h1>Hello <%= p.Title %></h1>
+
+<p>Here's a list of your favorite colors:</p>
+
+<ul>
+	<% for _, colorName := range p.FavoriteColors { %>
+	<li><%= colorName %></li>
+	<% } %>
+</ul>
+<% Footer(w, p) %>

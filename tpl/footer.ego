@@ -1,0 +1,4 @@
+<%! func Footer(w io.Writer, p *Page) error %>
+<div><%= p.Year %> Year</div>
+</body>
+</html>
